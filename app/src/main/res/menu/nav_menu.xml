@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_sidenav_receipt"
+        android:id="@+id/navMenu_billiDetail"
+        android:title="@string/billingDetails" />
+
+    <item
+        android:title="@string/calendarView"
+        android:id="@+id/navMenu_calendarView"
+        android:icon="@drawable/ic_sidenav_cd" />
+
+    <!--<item-->
+        <!--android:icon="@drawable/ic_sidenav_line"-->
+        <!--android:id="@+id/navMenu_chartStatistics"-->
+        <!--android:title="@string/chartStatistics" />-->
+
+    <item
+        android:title="@string/setting"
+        android:id="@+id/navMenu_setting"
+        android:icon="@drawable/ic_sidenav_setting" />
+
+    <!--<item-->
+        <!--android:icon="@drawable/ic_sidenav_info"-->
+        <!--android:id="@+id/navMenu_info"-->
+        <!--android:title="@string/feedback" />-->
+
+</menu>

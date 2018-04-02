@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="com.coldmoqiuli:banners-1.0.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/banners-1.0.0.aar/409e92405239a8d0d75a3bd6accde002/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/banners-1.0.0.aar/409e92405239a8d0d75a3bd6accde002/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.coldmoqiuli/banners/1.0.0/7a3c0d9fb9790228966ea5bb572dc0b634f64d4a/banners-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

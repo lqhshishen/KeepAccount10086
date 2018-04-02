@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1D65D4</color>
+    <color name="colorPrimaryDark">#2B5BB8</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorUp">#3EBD6F</color>
+    <color name="colorDown">#FD714E</color>
+    <color name="moneyColor">#B5B9C5</color>
+    <color name="textColor">#4C5264</color>
+    <color name="topMoney">#FFFFFF</color>
+    <color name="topText">#CDCFD6</color>
+    <color name="secBackground">#F1F0EC</color>
+    <color name="greyLine">#E0E0E0</color>
+    <color name="black">#000000</color>
+
+</resources>

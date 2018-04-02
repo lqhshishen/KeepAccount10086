@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.perfay.keepaccount.module.CalendarView.ui.CalendarViewActivity">
+
+    <include layout="@layout/tool_bar"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:orientation="vertical">
+        
+        <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            app:mcv_arrowColor="@color/topMoney"
+            app:mcv_dateTextAppearance="@style/CalendarStyle"
+            app:mcv_headerTextAppearance="@style/CalendarHeadStyle"
+            app:mcv_weekDayTextAppearance="@style/CalendarWeekStyle"
+            android:id="@+id/calendar_view">
+        </com.prolificinteractive.materialcalendarview.MaterialCalendarView>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="21dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:id="@+id/caldendar_recycle">
+
+        </android.support.v7.widget.RecyclerView>
+        
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

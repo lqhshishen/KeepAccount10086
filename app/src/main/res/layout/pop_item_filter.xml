@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/topMoney">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="@string/billifilter"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_filter_close"
+            android:layout_marginEnd="20dp"
+            android:layout_gravity="center"
+            android:id="@+id/pop_filter_finish"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/classify"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="24dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="32dp"
+        android:id="@+id/pop_filter_recycle">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="24dp"
+        android:text="@string/account"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="21dp"
+        android:id="@+id/pop_item_account">
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/moneysize"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="13dp">
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:background="@drawable/greybutton"
+            android:hint="@string/zuidijia"
+            android:gravity="center"
+            android:inputType="number"
+            android:textSize="12sp"
+            android:id="@+id/pop_item_filter_lowTv"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="—"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"/>
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="32dp"
+            android:background="@drawable/greybutton"
+            android:hint="@string/zuigaojia"
+            android:gravity="center"
+            android:inputType="number"
+            android:textSize="12sp"
+            android:id="@+id/pop_item_filter_highTv"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp">
+
+
+        <TextView
+            android:layout_width="64dp"
+            android:layout_height="36dp"
+            android:textSize="14sp"
+            android:textColor="@color/topMoney"
+            android:text="@string/sure"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/bluebutton"
+            android:layout_marginEnd="24dp"
+            android:gravity="center"
+            android:id="@+id/pop_filter_clear"/>
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

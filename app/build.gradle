@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.liqihao.keepaccount"
+        minSdkVersion 19
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        flavorDimensions "versionCode"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    compile 'org.greenrobot:eventbus:3.1.1'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    compile 'com.android.support:design:26.1.0'
+    compile 'de.hdodenhof:circleimageview:2.1.0'
+    compile 'com.android.support:recyclerview-v7:26.1.0'
+    compile 'com.android.support:cardview-v7:26.1.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'org.greenrobot:eventbus:3.1.1'
+    compile 'org.litepal.android:core:1.4.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.0'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compile 'com.squareup.retrofit2:retrofit:2.3.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.3.0'
+    implementation('com.github.hotchemi:permissionsdispatcher:2.4.0') {
+        exclude module: 'support-v13'
+    }
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.0.3'
+    compile 'com.coldmoqiuli:banners:1.0.0'
+    annotationProcessor 'com.github.hotchemi:permissionsdispatcher-processor:2.4.0'
+    compile 'com.squareup.okhttp3:okhttp:3.9.0'
+    compile 'com.jcodecraeer:xrecyclerview:1.5.8'
+    compile 'com.prolificinteractive:material-calendarview:1.4.3'
+    compile 'com.j256.ormlite:ormlite-android:5.0'
+    compile 'com.umeng.sdk:common:latest.integration'
+    compile 'com.umeng.sdk:analytics:latest.integration'
+    //    compile files('libs/SocialSDK_QQ_Simplify.jar')
+    //    compile files('libs/SocialSDK_WeChat_Simplify.jar')
+    //    compile files('libs/umeng_shareboard_widget.jar')
+    //    compile files('libs/umeng_social_api.jar')
+    //    compile files('libs/umeng_social_net.jar')
+    //    compile files('libs/umeng_social_shareboard.jar')
+    //    compile files('libs/umeng_social_tool.jar')
+    //    compile files('libs/open_sdk_r5793_lite.jar')
+}
